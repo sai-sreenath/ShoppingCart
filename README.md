@@ -36,3 +36,15 @@ Herein, when two components does not have parent-child relationship,(counters an
 ## Stateless Functional Components
 
 Herein, In navbar component, we only have single method i.e, render method, we dont have nay event handlers, helper methods to calculate values,we only have single render method. Also we don't have any state, we are getting all the data via props. In situations we convert this component into statless Functional component. So instead of using a class, we can use a fucntion.
+
+## Lifecycle Hooks
+
+Components go through a few phases during their lifecycle.
+Mounting phase: The first phase is the mounting phase and this is when an instance of a component is created and inserted into DOM.There are some special methods that we can add to our components and React will automatically call these methods. We refer to these methods as Lifecycle Hooks. So they allow us to hook into certain moments during the lifecycle of a component and do something.Mounting phase will have 3 lifecycle hooks constructor, render, componentDidMount. React will call these methods in order.
+
+Update phase: when the state or props of the component get changed.
+In this phase, we have 2 lifecycle hooks render and componentDidUpdate. So whenever we change the state of the component or give it new props, these two methods are called in order.
+
+Unmount phase:
+This is when the component is removed from the DOM as such when we are deleting the counter.In this phase we have componentWillUnmount hook.
+These lifecycle hooks we see are frequently used ones. We have few more hooks but are not used much.
