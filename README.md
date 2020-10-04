@@ -32,3 +32,7 @@ Herein Counter component, we want to remove local state and only rely on props a
 ## Lift the state up
 
 Herein, when two components does not have parent-child relationship,(counters and navbar) so how do we display total number of counters on navigation bar? In these situations, if you want to keep the data in sync, and if you want to share data between them, we need to lift the state up. So here, we lift the state of the counters component to it's parent(App) component,then we pass it to child using props.
+
+## Stateless Functional Components
+
+Herein, In navbar component, we only have single method i.e, render method, we dont have nay event handlers, helper methods to calculate values,we only have single render method. Also we don't have any state, we are getting all the data via props. In situations we convert this component into statless Functional component. So instead of using a class, we can use a fucntion.
