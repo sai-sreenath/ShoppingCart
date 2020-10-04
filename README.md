@@ -48,3 +48,13 @@ In this phase, we have 2 lifecycle hooks render and componentDidUpdate. So whene
 Unmount phase:
 This is when the component is removed from the DOM as such when we are deleting the counter.In this phase we have componentWillUnmount hook.
 These lifecycle hooks we see are frequently used ones. We have few more hooks but are not used much.
+
+## Mounting phase
+
+Setstate can only be called when a component is rendered and placed into DOM. So if you need to set the state directly, you can do so in constructor.
+
+componentDidMount is called after our component is rendered into the DOM, and it's the perfect place to make AJAX calls to get data from server.
+
+Rendering the component basically returns a react element that represents our virtual DOM. Now react gets the virtual DOm and render it in actual browser DOM.
+
+Order would be App-Constructor, App-Rendered, NavBar-Rendered, Counters-Rendered, counter-Rendered 4, App-Mounted

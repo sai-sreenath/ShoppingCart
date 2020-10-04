@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 //stateless functional components
 const NavBar = (props) => {
+  console.log("NavBar - Rendered");
+
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand" href="#">
