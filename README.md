@@ -58,3 +58,5 @@ componentDidMount is called after our component is rendered into the DOM, and it
 Rendering the component basically returns a react element that represents our virtual DOM. Now react gets the virtual DOm and render it in actual browser DOM.
 
 Order would be App-Constructor, App-Rendered, NavBar-Rendered, Counters-Rendered, counter-Rendered 4, App-Mounted
+
+## Update Phase
