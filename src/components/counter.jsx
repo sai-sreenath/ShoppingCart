@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   render() {
-    console.log("Counter - rendered");
 
     return (
       <div className="row">
